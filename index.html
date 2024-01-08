@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DarkWeb</title>
+    <link rel="stylesheet" href="src/style/fonts.css" />
+    <link rel="stylesheet" href="src/style/style.css" />
+    <link rel="stylesheet" href="src/style/onion-nodes.css" />
+    <link rel="stylesheet" href="src/style/store-buttons.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./src/scripts/onion-nodes.js"></script>
+  </head>
+  <body>
+    <main class="max-w-5xl flex flex-col gap-10 mx-auto w-full pt-6 px-6 pb-16">
+      <h1 class="website-title text-[4rem] md:text-[10rem] text-center text-white">DarkWeb</h1>
+      <section>
+        <div class="flex flex-col gap-4 text-white font-semibold">
+          <p>
+            This is a hidden layer of the internet, not accessible through
+            regular search engines. To enter this hidden world, one needs
+            special software, and the most popular among these is Tor (The Onion
+            Router).
+          </p>
+          <ul class="list-disc list-inside">
+            <li>Tor: Free software for anonymous internet use.</li>
+            <li>
+              Global network of servers hides user's location and activity.
+            </li>
+            <li>
+              Interesting Fact: Named 'The Onion Router' due to its data
+              layering technique.
+            </li>
+          </ul>
+          <p>
+            To dowload <span class="text-purple-500">Tor</span> click one of the
+            buttons below.
+          </p>
+        </div>
+        <div class="mt-4 flex flex-col gap-4 items-center sm:flex-row">
+          <!-- App Store button -->
+          <a
+            href="https://apps.apple.com/it/app/tor-browser-ornet-onion-vpn/id1177964608"
+            target="_blank"
+            class="market-btn apple-btn"
+            role="button"
+          >
+            <span class="market-button-subtitle">Download on the</span>
+            <span class="market-button-title">App Store</span>
+          </a>
+          <!-- Google Play button -->
+          <a
+            href="https://play.google.com/store/apps/details?id=org.torproject.torbrowser"
+            target="_blank"
+            class="market-btn google-btn"
+            role="button"
+          >
+            <span class="market-button-subtitle">Download on the</span>
+            <span class="market-button-title">Google Play</span>
+          </a>
+        </div>
+      </section>
+      <hr class="h-[0.05rem] bg-white w-full" />
+      <section class="flex flex-col gap-4 text-white font-semibold">
+        <h3 class="text-4xl">How Tor Works...</h3>
+        <p>
+          Let’s dive into how Tor actually works. It's based on a principle
+          called 'onion routing.
+        </p>
+        <ul class="list-disc list-inside">
+          <li>Onion Routing: Data encrypted in multiple layers.</li>
+          <li>Each server (relay) removes one encryption layer.</li>
+          <li>No single point knows both origin and destination.</li>
+        </ul>
+        <div class="onion-nodes w-full h-52 mt-8">
+          <img
+            id="onionImage"
+            src="./src/images/onions/onion1.png"
+            class="onion w-16 z-10"
+            style="position: absolute"
+          />
+          <canvas id="nodes-lines-canva"></canvas>
+          <div class="node node-1"></div>
+          <div class="node node-2"></div>
+          <div class="node node-3"></div>
+          <div class="node node-4"></div>
+        </div>
+        <button
+          id="startOnionAnimation-btn"
+          class="px-6 py-3.5 mt-6 text-white bg-indigo-600 rounded-lg duration-150 hover:bg-indigo-700 active:shadow-lg self-center"
+        >
+          Start Animation
+        </button>
+      </section>
+      <hr class="h-[0.05rem] bg-white w-full" />
+      <section class="flex flex-col gap-4 text-white font-semibold">
+        <h3 class="text-4xl">Potential Risks...</h3>
+        <p>
+          While Tor is a powerful tool for online privacy, it’s not without its
+          risks and limitations
+        </p>
+        <ul class="list-disc list-inside">
+          <li>Misconception: Tor is solely for illegal activities.</li>
+          <li>Reality: Tor is a tool for privacy, not illegal actions.</li>
+          <li>Legal and ethical use is paramount.</li>
+        </ul>
+        <ul class="list-disc list-inside">
+          <li>Tor can be slower than regular browsing.</li>
+          <li>Some websites may not be Tor-compatible.</li>
+          <li>Risk of accidental personal information leakage.</li>
+        </ul>
+      </section>
+      <hr class="h-[0.05rem] bg-white w-full" />
+      <section class="flex flex-col gap-4 text-white font-semibold">
+        <h3 class="text-4xl">Security Considerations...</h3>
+        <p>
+          In terms of security, Tor is quite robust. It employs multiple layers
+          of encryption and routes data through a network that lacks a central
+          control point, which protects against tracking and surveillance
+        </p>
+        <ul class="list-disc list-inside">
+          <li>Multiple layers of encryption.</li>
+          <li>Decentralized network prevents tracking.</li>
+          <li>Offers significant anonymity and privacy.</li>
+        </ul>
+      </section>
+      <hr class="h-[0.05rem] bg-white w-full" />
+      <section class="flex flex-col gap-4 text-white font-semibold">
+        <h3 class="text-4xl">Funny Activity...</h3>
+        <p>
+          Now is the time to have some fun. Let's try to find some hidden
+          websites. Open the Tor browser that you have just downloaded, start it
+          and copy one of the following links into the address bar or just visit
+          the
+          <a
+            href="https://thehidden-wiki.org/wiki/index.php/Main_Page"
+            class="underline text-purple-500"
+            >Hidden Wiki</a
+          >.
+        </p>
+        <ul class="list-disc list-inside max-w-full break-all">
+          <li>
+            Torch
+            (<span class="text-purple-300">http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion</span>)
+          </li>
+          <li>
+            Ahmia
+            (<span class="text-purple-300">http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion</span>)
+          </li>
+          <li>
+            Haystack
+            (<span class="text-purple-300">http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion</span>)
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
