@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="src/styles/onion-nodes.css" />
     <link rel="stylesheet" href="src/styles/store-buttons.css" />
     <link rel="stylesheet" href="src/styles/quiz.css" />
+    <link rel="stylesheet" href="src/styles/minigame.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="./src/scripts/onion-nodes.js"></script>
     <script defer src="./src/scripts/quiz.js"></script>
+    <script defer src="./src/scripts/minigame.js"></script>
   </head>
   <body onload="NextQuestion(0)">
     <main class="max-w-5xl flex flex-col gap-10 mx-auto w-full pt-6 px-6 pb-16">
@@ -225,6 +227,27 @@
           <li>Decentralized network prevents tracking.</li>
           <li>Offers significant anonymity and privacy.</li>
         </ul>
+        <p class="text-yellow-300" style="max-width: 100% !important;">
+          Protect "Bob" from incoming viruses. The player must click on viruses
+          that randomly appear on the screen to "neutralize" them, but be
+          careful not to click on the chicken legs or "Bob" will become sad.
+        </p>
+        <div id="gameArea">
+          <img id="bob" src="./src/images/minigame/bob.png" alt="Bob" />
+          <div id="gameInfo">
+            <span id="score">Score: 0</span>
+            <span class="text-red-400"> | </span>
+            <span id="bestScore">Best Score: 0</span>
+            <span class="text-red-400"> | </span>
+            <span id="gameStatus">Status: Not Started</span>
+          </div>
+        </div>
+        <button
+          id="startMinigame-btn"
+          class="px-6 py-3.5 mt-6 text-white bg-indigo-600 rounded-lg duration-150 hover:bg-indigo-700 active:shadow-lg self-center"
+        >
+          Start Minigame
+        </button>
       </section>
       <hr class="h-[0.05rem] bg-white w-full" />
       <section class="flex flex-col gap-4 text-white font-semibold">
